@@ -1,4 +1,5 @@
 #!/bin/bash
-read -p "Enter a: " a
-read -p "Enter b: " b
-echo "Sum = $((a+b))"
+a=10
+b=20
+Sum=$((a+b))
+echo "Sum = $Sum"
