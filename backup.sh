@@ -1,8 +1,11 @@
 #!/bin/bash
 
-source="/home/sandeep/data"
-backup="/home/sandeep/backup"
+source="/home/ubuntu/data"
+backup="/home/ubuntu/backup"
 
-cp -r $source $backup
+mkdir -p "$source"
+mkdir -p "$backup"
+
+cp -r "$source"/* "$backup" 2>/dev/null
 
 echo "Backup completed"
