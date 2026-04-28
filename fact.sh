@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "Enter a number:"
-read n
-
+n=5
 fact=1
 
 for (( i=1; i<=n; i++ ))
@@ -11,4 +9,3 @@ do
 done
 
 echo "Factorial of $n is: $fact"
-

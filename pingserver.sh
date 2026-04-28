@@ -1,5 +1,7 @@
+
 #!/bin/bash
-while true
+
+for i in {1..5}
 do
   ping -c 1 google.com
   sleep 2
