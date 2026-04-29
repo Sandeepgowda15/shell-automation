@@ -1,12 +1,16 @@
 #!/bin/bash
 
-while true
-do
-    systemctl is-active nginx
+end=$((SECONDS+30))
 
-    if [ $? -ne 0 ]; then
+while [ $SECONDS -lt $end ]
+do
+    STATUS=$(systemctl is-active nginx)
+
+    echo "Nginx status: $STATUS"
+
+    if [ "$STATUS" != "active" ]; then
         echo "🚨 Nginx is down!"
     fi
 
     sleep 5
-done
+done    
