@@ -1,6 +1,9 @@
 #!/bin/bash
-while true
+
+for i in {1..5}
 do
   date
   sleep 5
 done
+
+
